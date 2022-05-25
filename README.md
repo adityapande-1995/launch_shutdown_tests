@@ -17,3 +17,5 @@ You should see the following 3 processes still active :
 \_ python3 test_no_print.py -shell-true-buffered
 \_ python3 -u test_no_print.py -shell-true-unbuffered
 ```
+
+The C++ processes are killed successfully.
