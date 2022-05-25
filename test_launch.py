@@ -66,6 +66,18 @@ def generate_test_description():
                 output='both',
             ),
 
+            # Checking C++ processes, both of these will get killed
+            ExecuteProcess(
+                cmd=['./test_cpp_process/myprinter', '-shell-true'],
+                shell=True,
+                output='both',
+            ),
+            ExecuteProcess(
+                cmd=['./test_cpp_process/myprinter', '-shell-false'],
+                shell=False,
+                output='both',
+            ),
+
             ReadyToTest(),
         ])
 
